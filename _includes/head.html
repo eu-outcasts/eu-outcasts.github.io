@@ -1,0 +1,23 @@
+<head>
+<title>{% if page.title %}{{ page.title }} &bull; {% endif %}{{ site.title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}">
+    {% if page.summary %}
+    <meta property="og:description" content="{{ page.summary }}">
+    {% else %}
+    <meta property="og:description" content="{{ page.excerpt }}">
+    {% endif %}
+{% else %}
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ site.title }}">
+<link rel="stylesheet" href="{{ site.bootstrap_css }}">
+<link rel="stylesheet" href="/assets/css/stylesheet.css">
+<script src="{{ site.jquery }}"></script>
+<script src="{{ site.bootstrap_script }}"></script>
+<script src="{{ site.fontawesome }}"></script>
+</head>
