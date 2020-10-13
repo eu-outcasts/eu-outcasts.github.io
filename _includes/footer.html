@@ -1,0 +1,48 @@
+<div id="footer" class="container-fluid row no-gutters bg-darker">
+    <div class="col-md-8">
+        <ul style="list-style-type: none;">
+            <li class="text-muted">&copy; {{ site.title }}. All rights reserved.</li>
+            <li class="text-muted">Coded with <i class="fas fa-heart"></i> by Chroma9</li>
+            <br>
+            <li class="text-muted">"The Isle" and all related materials/intellectual property are owned and © Afterthought, LLC.</li>
+        </ul>
+    </div>
+    <div class="col-md-2">
+        <ul style="list-style-type: none;">
+            <li><a class="text-success" href="">The Isle</a></li>
+            <li><a class="text-success" href="/about">About Us</a></li>
+            <li><a class="text-success" href="/events">Server Events</a></li>
+            <li><a class="text-success" href="/rules">Server Rules</a></li>
+            <li><a class="text-success" href="/dinojoe">DinoJoe</a></li>
+            <li><a class="text-success" href="#">Our Blog</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2">
+        <ul style="list-style-type: none;">
+            {% if site.discord %}
+                <li><a class="text-success" href="https://discord.gg/{{ site.discord }}">
+                    <i class="fab fa-discord"></i>
+                    <span> Discord</span>
+                </a></li>
+            {% endif %}
+            {% if site.twitter %}
+                <li><a class="text-success" href="https://twitter.com/{{ site.twitter }}">
+                    <i class="fab fa-twitter"></i>
+                    <span> Twitter</span>
+                </a></li>
+            {% endif %}
+            {% if site.twitch %}
+                <li><a class="text-success" href="https://www.twitch.tv/{{ site.twitch }}">
+                    <i class="fab fa-twitch"></i>
+                    <span> Twitch</span>
+                </a></li>
+            {% endif %}
+            {% if site.youtube %}
+                <li><a class="text-success" href="https://www.youtube.com/{{ site.youtube }}">
+                    <i class="fab fa-youtube"></i>
+                    <span> YouTube</span>
+                </a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

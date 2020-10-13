@@ -1,6 +1,6 @@
 # Website Information
 title: The OUTCASTS
-description: The official website for The Isle server!
+description: The official website for The OUTCASTS Isle server!
 
 # External Assets
 bootstrap_css: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css
@@ -9,4 +9,6 @@ fontawesome: https://kit.fontawesome.com/cef94a7238.js
 jquery: https://code.jquery.com/jquery-3.5.1.min.js
 
 # Social Accounts
-discord: https://discord.gg/aVEcEeb
+discord: aVEcEeb
+twitch: euoutcasts
+youtube: channel/UCuM0vfdr-lfdE4VP5cf9uOw

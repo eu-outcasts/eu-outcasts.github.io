@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en_US">
+
+{% include head.html %}
+
+<body class="bg-dark text-light">
+    {% include navbar.html %}
+    {% include jumbotron.html %}
+    <div class="row no-gutters container-fluid">
+        <div class="col-md-6">
+            <h3 class="font-brand">About Us!</h3>
+            <p>
+            We are a group of friends who got together through The Isle, mostly playing on no rule servers 
+            and doing a lot of training on deathmatch servers, always learning and sharing our knowledge.
+            </p>
+            <p><a class="btn btn-success" href="/about">More About Us &rarr;</a></p>
+            <h3 class="font-brand">Events!</h3>
+            <p>
+            {{ site.title }} host weekly events and often on weekends. Events range from Arena Battles, 
+            Hide and Seek events and more that earn you points on our server with our custom Discord Bot 
+            who handles all users ability to self inject their own dinosaurs!
+            </p>
+            <p><a class="btn btn-success" href="/events">More About Events &rarr;</a></p>
+            <h3 class="font-brand">DinoJoe!</h3>
+            <p>
+            Our resident software engineer created us our own Discord Bot named <span class="text-discord">@DinoJoe</span>!
+            He helps with user dinosaur injections, holding bets, user inventories, a shop and so much more!
+            </p>
+            <p><a class="btn btn-success" href="/dinojoe">More About DinoJoe &rarr;</a></p>
+        </div>
+        <div class="col-md-6">
+            <h3 class="font-brand">Join our Discord!</h3>
+            <iframe 
+                src="https://discordapp.com/widget?id=392436568746491905&theme=dark" 
+                width="100%" 
+                height="90%" 
+                allowtransparency="true" 
+                frameborder="0" 
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+            ></iframe>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
