@@ -5,15 +5,18 @@
 
 <body class="bg-dark text-light">
     <div class="jumbotron jumbotron-wallpaper">
-        <div class="bg-faded text-center rounded">
-            <div class="perfect-center">
+        <div class="text-center">
+            <div class="perfect-center bg-faded rounded">
                 <h1 class="display-1 font-brand">{{ site.title }}</h1>
+                {% if page.image %}
+                    <img class="rounded-circle" src="{{ page.image }}" style="height: 128; width: 128;">
+                {% endif %}
                 <p class="lead">Welcome, prehistoric adventurer, to {{ site.title }} official website!</p>
                 <p>
                 On our website you can find all you need to know about our custom server, the events we run,
                 and the features we have to make your life easy! Please come in and make yourself at home!
                 </p>
-                <a href="/home" class="btn btn-success">Enter {{ site.title }}</a>
+                <p><a href="/home" class="btn btn-success">Enter {{ site.title }}</a></p>
             </div>
         </div>
     </div>
